@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Ticket Pilot — Local Lab",
+  "version": "0.1.0",
+  "description": "ผู้ช่วยเลือกที่ติดกันใน Ticket Lab บนเครื่องของคุณเท่านั้น ไม่เชื่อมเว็บขายบัตรภายนอก",
+  "action": { "default_title": "Ticket Pilot Lab", "default_popup": "popup.html" },
+  "content_scripts": [{
+    "matches": ["http://127.0.0.1/*", "http://localhost/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
